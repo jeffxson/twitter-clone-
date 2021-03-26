@@ -29,7 +29,23 @@
   border-radius: 20px;
 }
 
-.widgets__widgetContainer > h2 {
-  font-size: 18px;
-  font-weight: 800;
+.widgets__widgetContainer > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--twitter-background);
+}
+
+.widgets__widgetContainer > .header > .setting {
+  color: var(--twitter-color);
+  font-size: 30px;
+}
+
+.widgets__widgetContainer > .body > .trend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 12px 0;
 }

@@ -1,11 +1,7 @@
 import React from 'react'
 import './Widgets.css'
 import SearchIcon from '@material-ui/icons/Search'
-import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterTweetEmbed
-} from 'react-twitter-embed'
+import SettingsIcon from '@material-ui/icons/Settings'
 
 function Widgets() {
   return (
@@ -16,20 +12,16 @@ function Widgets() {
       </div>
 
       <div className='widgets__widgetContainer'>
-        <h2>What's happening?</h2>
-
-        <TwitterTweetEmbed tweetId={'858551177860055040'} />
-
-        <TwitterTimelineEmbed
-          sourceType='profile'
-          screenName='cleverqazi'
-          options={{ height: 400 }}
-        />
-
-        <TwitterShareButton
-          url={'https://facebook.com/cleverprogrammer'}
-          options={{ text: '#reactjs is awesome', via: 'cleverqazi' }}
-        />
+        <div className='header'>
+          <h2>Trends for you</h2>
+          <SettingsIcon className='setting' />
+        </div>
+        <div className='body'>
+          <div className='trend'>
+            <p>#BugsBunnyChallenge</p>
+            <p>...</p>
+          </div>
+        </div>
       </div>
     </div>
   )
