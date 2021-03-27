@@ -6,10 +6,10 @@
   display: flex;
   align-items: center;
   background-color: var(--twitter-background);
-  padding: 10px;
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 20px;
+  padding: 10px;
 }
 
 .widgets__input > input {
@@ -24,21 +24,27 @@
 .widgets__widgetContainer {
   margin-top: 15px;
   margin-left: 20px;
-  padding: 20px;
   background-color: #f5f8fa;
   border-radius: 20px;
+  padding: 20px 0s;
 }
 
 .widgets__widgetContainer > .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 18px 0;
   border-bottom: 2px solid var(--twitter-background);
+}
+
+.widgets__widgetContainer > .header > h2 {
+  padding-left: 10px;
 }
 
 .widgets__widgetContainer > .header > .setting {
   color: var(--twitter-color);
   font-size: 30px;
+  padding-right: 10px;
 }
 
 .widgets__widgetContainer > .body > .trend {
@@ -47,6 +53,37 @@
   align-items: center;
   font-size: 20px;
   font-weight: bolder;
-  margin: 30px 0;
   border-bottom: 2px solid var(--twitter-background);
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.widgets__widgetContainer > .body > .trend > p {
+  padding: 0 10px;
+}
+
+.widgets__widgetContainer > .more {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 18px 0;
+  cursor: pointer;
+  color: var(--twitter-color);
+  padding-left: 10px;
+}
+
+.widgets > .footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.widgets > .footer > p > a {
+  color: rgb(91, 112, 131);
+  text-decoration: none;
+}
+
+.widgets > .footer > p > a:hover {
+  text-decoration: underline;
 }

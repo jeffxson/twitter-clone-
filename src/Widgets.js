@@ -46,6 +46,30 @@ function Widgets() {
             <p>...</p>
           </div>
         </div>
+        <div className='more'>
+          <p>Show more</p>
+        </div>
+      </div>
+
+      <div className='footer'>
+        <p>
+          <a href='#'>Terms of Service</a>
+        </p>
+        <p>
+          <a href='#'>Privacy Policy</a>
+        </p>
+        <p>
+          <a href='#'>Cookie Policy</a>
+        </p>
+        <p>
+          <a href='#'>Ads info</a>
+        </p>
+        <p>
+          <a href='#'>More ...</a>
+        </p>
+        <p>
+          <a href='#'>&copy; 2021 Twitterr, Inc</a>
+        </p>
       </div>
     </div>
   )

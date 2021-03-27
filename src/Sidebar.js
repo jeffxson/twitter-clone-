@@ -10,7 +10,7 @@ import ListAltIcon from '@material-ui/icons/ListAlt'
 import PermIdentityIcon from '@material-ui/icons/PermIdentity'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz'
 import SidebarOption from './SidebarOption'
-import { Button } from '@material-ui/core'
+import { Button, Avatar } from '@material-ui/core'
 
 function Sidebar() {
   return (
@@ -30,6 +30,19 @@ function Sidebar() {
       <Button variant='outlined' className='sidebar__tweet' fullWidth>
         Tweet
       </Button>
+
+      <div className='foot'>
+        <div className='about'>
+          <Avatar src='https://pbs.twimg.com/profile_images/1348732006067265538/CYBQTWuM_400x400.jpg' />
+          <div>
+            <p className='display'>Munachi</p>
+            <p className='user'>@Munachiiso</p>
+          </div>
+        </div>
+        <div className='dot'>
+          <p>...</p>
+        </div>
+      </div>
     </div>
   )
 }
