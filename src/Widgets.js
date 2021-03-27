@@ -22,6 +22,30 @@ function Widgets() {
             <p>...</p>
           </div>
         </div>
+        <div className='body'>
+          <div className='trend'>
+            <p>Seuz Canal</p>
+            <p>...</p>
+          </div>
+        </div>
+        <div className='body'>
+          <div className='trend'>
+            <p>Ebuka</p>
+            <p>...</p>
+          </div>
+        </div>
+        <div className='body'>
+          <div className='trend'>
+            <p>Nationwide</p>
+            <p>...</p>
+          </div>
+        </div>
+        <div className='body'>
+          <div className='trend'>
+            <p>#PayHouseOfficers</p>
+            <p>...</p>
+          </div>
+        </div>
       </div>
     </div>
   )
