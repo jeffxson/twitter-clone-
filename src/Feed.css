@@ -20,10 +20,38 @@
   background-color: white;
   z-index: 100;
   border: 1px solid var(--twitter-background);
+  padding: 15px 20px;
 }
 
 .feed__header > h2 {
   font-size: 20px;
   font-weight: 800;
-  padding: 15px 20px;
+}
+
+@media (max-width: 1300px) {
+  .feed {
+    flex: 0.6;
+  }
+}
+
+@media (max-width: 980px) {
+  .feed {
+    flex: 0.7;
+  }
+}
+@media (max-width: 900px) {
+  .feed {
+    flex: 0.9;
+  }
+}
+
+@media (max-width: 550px) {
+  .feed {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .feed__header {
+    padding: 0;
+  }
 }

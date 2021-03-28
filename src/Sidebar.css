@@ -23,6 +23,11 @@
   border-radius: 30px !important;
   height: 50px !important;
   margin-top: 20px !important;
+  display: block;
+}
+
+.sidebar > .button > .hide {
+  display: none;
 }
 
 .sidebar > .foot {
@@ -52,4 +57,26 @@
 
 .sidebar > .foot > .dot > p {
   font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .sidebar > .button > .hide {
+    display: block;
+    width: 25%;
+    background: var(--twitter-color);
+    border-radius: 15em;
+  }
+  .sidebar > .button > .show {
+    display: none;
+  }
+  .sidebar {
+    min-width: 1px;
+    flex: 0.1;
+  }
+}
+
+@media (max-width: 550px) {
+  .sidebar {
+    display: none;
+  }
 }
