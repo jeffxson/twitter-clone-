@@ -65,6 +65,7 @@
     width: 25%;
     background: var(--twitter-color);
     border-radius: 15em;
+    margin-left: 20px;
   }
   .sidebar > .button > .show {
     display: none;
@@ -72,6 +73,15 @@
   .sidebar {
     min-width: 1px;
     flex: 0.1;
+  }
+  .sidebar > .foot > .about > .name {
+    display: none;
+  }
+  .sidebar > .foot > .about {
+    margin-left: 20px;
+  }
+  .sidebar > .foot > .dot {
+    display: none;
   }
 }
 

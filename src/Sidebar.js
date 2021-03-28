@@ -47,7 +47,7 @@ function Sidebar() {
       <div className='foot'>
         <div className='about'>
           <Avatar src='https://pbs.twimg.com/profile_images/1348732006067265538/CYBQTWuM_400x400.jpg' />
-          <div>
+          <div className='name'>
             <p className='display'>Munachi</p>
             <p className='user'>@Munachiiso</p>
           </div>
