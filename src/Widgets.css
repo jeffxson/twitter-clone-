@@ -91,6 +91,7 @@
 .widgets > .footer > p > a {
   color: rgb(91, 112, 131);
   text-decoration: none;
+  padding-bottom: 20px;
 }
 
 .widgets > .footer > p > a:hover {
