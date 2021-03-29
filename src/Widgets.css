@@ -1,6 +1,14 @@
 .widgets {
   flex: 0.3;
   display: block;
+  height: 100vh;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.widgets::-webkit-scrollbar {
+  display: none;
 }
 
 .widgets__input {
@@ -87,6 +95,69 @@
 
 .widgets > .footer > p > a:hover {
   text-decoration: underline;
+}
+
+.follow {
+  margin-top: 15px;
+  margin-left: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+  padding: 20px 0s;
+}
+
+.follow > .header {
+  padding: 18px 0;
+  border-bottom: 2px solid var(--twitter-background);
+}
+
+.follow > .header > h2 {
+  padding-left: 10px;
+}
+
+.follow > .people {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  border-bottom: 2px solid var(--twitter-background);
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.follow > .people > .about {
+  display: flex;
+  margin-left: 10px;
+}
+
+.follow > .people > .about > .name {
+  margin-left: 8px;
+}
+
+.follow > .people > .about > .name > .display {
+  font-weight: bolder;
+}
+.follow > .people > .about > .name > .user {
+  font-weight: 400;
+}
+
+.follow > .people > .button {
+  margin-right: 10px;
+  border: 2px solid var(--twitter-background);
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.follow > .people > .button > .follow__button {
+  text-transform: inherit !important;
+  font-weight: bolder;
+}
+
+.follow > .more {
+  font-weight: 400;
+  padding: 18px 0;
+  cursor: pointer;
+  color: var(--twitter-color);
+  padding-left: 10px;
 }
 
 @media (max-width: 980px) {

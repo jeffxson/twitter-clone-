@@ -2,6 +2,8 @@ import React from 'react'
 import './Widgets.css'
 import SearchIcon from '@material-ui/icons/Search'
 import SettingsIcon from '@material-ui/icons/Settings'
+import { Avatar, Button } from '@material-ui/core'
+import VeriedUserIcon from '@material-ui/icons/VerifiedUser'
 
 function Widgets() {
   return (
@@ -46,6 +48,66 @@ function Widgets() {
             <p>...</p>
           </div>
         </div>
+        <div className='more'>
+          <p>Show more</p>
+        </div>
+      </div>
+
+      <div className='follow'>
+        <div className='header'>
+          <h2>Who To Follow</h2>
+        </div>
+        <div className='people'>
+          <div className='about'>
+            <div className='pix'>
+              <Avatar src='https://pbs.twimg.com/profile_images/958018296087040000/Y7mnhw8n_400x400.jpg' />
+            </div>
+            <div className='name'>
+              <p className='display'>
+                PFL MMA <VeriedUserIcon className='post__badge' />
+              </p>
+              <p className='user'>@ProFightLeague</p>
+            </div>
+          </div>
+          <div className='button'>
+            <Button className='follow__button'>Follow</Button>
+          </div>
+        </div>
+
+        <div className='people'>
+          <div className='about'>
+            <div className='pix'>
+              <Avatar src='https://pbs.twimg.com/profile_images/1329434147627134978/giLcbo8K_400x400.jpg' />
+            </div>
+            <div className='name'>
+              <p className='display'>
+                Declan Rice <VeriedUserIcon className='post__badge' />
+              </p>
+              <p className='user'>@_DeclanRice</p>
+            </div>
+          </div>
+          <div className='button'>
+            <Button className='follow__button'>Follow</Button>
+          </div>
+        </div>
+
+        <div className='people'>
+          <div className='about'>
+            <div className='pix'>
+              <Avatar src='https://pbs.twimg.com/profile_images/1367574212630749188/gcm_yjy6_400x400.jpg' />
+            </div>
+            <div className='name'>
+              <p className='display'>
+                Daily Devotional <VeriedUserIcon className='post__badge' />
+              </p>
+              <p className='user'>@streetchurchh</p>
+            </div>
+          </div>
+          <div className='button'>
+            <Button className='follow__button'>Follow</Button>
+          </div>
+        </div>
+
         <div className='more'>
           <p>Show more</p>
         </div>
